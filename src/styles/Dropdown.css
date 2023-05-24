@@ -77,7 +77,7 @@
     .dropdown-content, .dropdown-content.dropdown-content.company, .dropdown-content.connect {
         align-items: center;
         position: relative;
-        top: 5px;
+        top: 0.313rem;
         background-color: transparent;
         box-shadow: none;
         background-color: rgb(239,239,241);

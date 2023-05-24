@@ -19,7 +19,7 @@ body, #root {
   background-repeat: no-repeat;
   background-position: -30vw, center center;
   height: 70vh;
-  border-radius: 0 0 0 100px;
+  border-radius: 0 0 0 6.25rem;
   
 }
 
@@ -38,32 +38,32 @@ body, #root {
 
 .header-title {
   text-align: center;
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 3.125rem;
+  margin-bottom: 0.625rem;
 }
 
 .header-text {
   text-align: center;
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem;
 }
 
 .main-btns {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .start-btn, .learn-more-btn {
   font-weight: 600;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: white;
   color: hsl(356, 100%, 66%);
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .learn-more-btn {
   background-color: transparent;
-  border: 1px solid white;
+  border: 0.063rem solid white;
   color: white;
 }
 
@@ -90,25 +90,25 @@ body, #root {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 20px 200px;
+  padding: 1.25rem 12.5rem;
 }
 
 .design-title {
   text-align: center;
-  font-size: 44px;
-  margin-block: 70px;
+  font-size: 2.75rem;
+  margin-block: 4.375rem;
 }
 
 .design-container {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 3.125rem;
 }
 
 .design-intro-title, .design-content-title {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .ai-section {
@@ -117,7 +117,7 @@ body, #root {
   background-repeat: no-repeat;
   background-position: -15vw -60vh,center center;
   height: 55vh;
-  border-radius: 0 100px 0 100px;
+  border-radius: 0 6.25rem 0 6.25rem;
   display: flex;
   position: relative;
 }
@@ -128,8 +128,7 @@ body, #root {
   width: 48%;
   display: flex;
   flex-direction: column;
-  padding: 0 200px 0 0;
-  /* align-items: end; */
+  padding: 0 12.5rem 0 0;
 }
 
 .ai-img {
@@ -139,36 +138,104 @@ body, #root {
 }
 
 .ai-title {
-  font-size: 32px;
-  margin-bottom: 40px;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.description-section {
+  color: hsl(207, 13%, 34%);
+  position: relative;
+  background-image: url('/images/illustration-laptop-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: -14vw, center center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.25rem 12.5rem;
+}
+
+.description-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  padding:  0 0 0 30vw;
+}
+
+.description-intro-title, .description-power-title {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.description-intro-text, .description-power-text {
+  width: 81%;
+}
+
+.footer {
+  border-radius: 0 6.25rem 0 0;
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(240, 2%, 79%);
+  padding: 3.125rem 12.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.footer-column-title {
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.footer-column-element {
+  width: fit-content;
+}
+
+.footer-column-element:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer, footer > a {
+  text-align: center;
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(240, 2%, 79%);
 }
 
 @media screen and (max-width: 950px) {
   .header-section {
-    background-size: cover;
+    background-size: 300%, cover;
+    background-position: -70vw -40vh ,center center;
   }
   .header-title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .design-section {
-    padding: 10px;
+    padding: 0.625rem;
     height: fit-content;
     background-image: url('/images/illustration-editor-mobile.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center 150px; 
+    background-position: center 9.375rem; 
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 9.375rem;
   }
 
   .design-title {
-    margin-top: 70px;
-    font-size: 32px;
+    margin-top: 4.375rem;
+    font-size: 2rem;
   }
 
   .design-container {
-    margin-top: 300px;
+    margin-top: 18.75rem;
     text-align: center;
     width: 100%;
   }
@@ -186,11 +253,55 @@ body, #root {
 
   .ai-content {
     width: 100%;
-    padding: 120px 30px;
+    padding: 7.5rem 1.875rem;
     text-align: center;
   }
 
   .ai-title {
-    margin-top: 180px
+    margin-top: 11.25rem
+  }
+
+  .description-section {
+    padding: 0.625rem;
+    height: fit-content;
+    background-image: url('/images/illustration-laptop-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 1.25rem; 
+    position: relative;
+    margin-bottom: 9.375rem;
+  }
+
+  .description-title {
+    margin-top: 4.375rem;
+    font-size: 2rem;
+  }
+
+  .description-container {
+    margin-top: 18.75rem;
+    text-align: center;
+    width: 100%;
+    padding: 1.875rem;
+  }
+  .description-intro-text, .description-power-text {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3.125rem;
+    gap: 3.125rem;
+    text-align: center;
+  }
+
+  .footer-column {
+    align-items: center;
+  }
+
+  .footer-column-title {
+    margin-bottom: 1.25rem
   }
 }

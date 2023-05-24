@@ -68,8 +68,8 @@ export default function Navbar(){
 
     return (
         <nav>
-            <img className="logo" src="/images/logo.svg"></img>
-            <img className="menu-btn" src={`/images/icon-${isOpen ? "close" : "hamburger"}.svg`} onClick={toggleIsOpen}></img>
+            <img className="logo" src="/images/logo.svg" alt="Logo"></img>
+            <img className="menu-btn" src={`/images/icon-${isOpen ? "close" : "hamburger"}.svg`} onClick={toggleIsOpen} alt="Menu Button"></img>
             <div className={`nav-items ${isOpen ? "opened" : ""}`}>
                 <Dropdown title='Product' elements={ProductItems} />
                 <Dropdown title='Company' elements={CompanyItems} />

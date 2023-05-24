@@ -4,8 +4,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 20px 200px;
+    gap: 1.25rem;
+    padding: 1.25rem 12.5rem;
     color: white;
     font-weight: 600;
 }
@@ -17,7 +17,7 @@ nav > img {
 .nav-items {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     width: 100%;
 }
 
@@ -27,7 +27,7 @@ nav > img {
     width: fit-content;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     margin-left: auto;
 }
 
@@ -48,8 +48,8 @@ nav > img {
     background-color: white;
     border: none;
     width: 100px;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 0.625rem;
+    border-radius: 1.25rem;
     color: hsl(356, 100%, 66%);
     font-weight: 600;
     text-align: center;
@@ -67,15 +67,15 @@ nav > img {
 
 .divider {
     visibility: hidden;
-    margin-block: 20px;
-    height: 1px;
+    margin-block: 1.25rem;
+    height: 0.063rem;
     width: 100%;
     background-color: rgb(239,239,241);
 }
 
 @media screen and (max-width: 950px) {
     nav {
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
         color: hsl(208, 49%, 24%);
     }
     .menu-btn {
@@ -87,9 +87,10 @@ nav > img {
     }
 
     .nav-items {
+        z-index: 1;
         color: hsl(208, 49%, 24%);
-        border-radius: 5px;
-        padding: 20px;
+        border-radius: 0.313rem;
+        padding: 1.25rem;
         background: white;
         flex-direction: column;
         align-items: center;
@@ -103,7 +104,7 @@ nav > img {
 
     .nav-items.opened {
         position: absolute;
-        transform: translateX(0vw);
+        transform: none
     }
 
     .header-btns {
