@@ -19,4 +19,4 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/aveandrian/blogr-landing-page-react/assets/13519212/35906ba1-64f1-47a6-992d-cbe84beb1f73)
