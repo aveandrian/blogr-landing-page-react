@@ -20,7 +20,7 @@ export default function Dropdown(props){
             <div className="dropdown-title" onClick={toggleIsOpened}>
                 <p>{props.title}</p>
                 <picture>
-                    <source srcset="/images/icon-arrow-dark.svg" media="(max-width: 950px)" />
+                    <source srcSet="/images/icon-arrow-dark.svg" media="(max-width: 950px)" />
                     <img 
                         src={`/images/icon-arrow-light.svg`} //src={`/images/icon-arrow-${isOpened ? "light" : "dark"}.svg`} 
                         className={`dropdown-icon ${isOpened ? "opened" : ""}`} 
